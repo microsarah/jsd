@@ -1,0 +1,169 @@
+*{margin:0;}
+
+@font-face {
+    font-family: CamcorderOutline;
+    src: url("fonts/CAMCORDER_MS_OL2.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Camcorder;
+    src: url("fonts/CAMCORDER_MS_REG.otf") format("opentype");
+}
+
+body{
+    font-family: CamcorderOutline, monospace;
+    font-size: 20px;
+    color:white;
+    background-color: #000;
+}
+
+iframe {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    border-radius: 120px;
+}
+
+button{
+    font-family: Camcorder, monospace;
+    border:1px solid #fff;
+    background: #000;
+    padding:1em;
+    color:#fff;
+    font-size:1em;
+    letter-spacing: .2em;
+    margin:.5em;
+    text-transform: uppercase;
+}
+
+input{
+    width: 1.75em;
+    border:2px solid #fff;
+    background: #000;
+    padding:1em;
+    color:#fff;
+    font-family: monospace;
+    font-size:1em;
+    letter-spacing: .2em;
+    margin:.5em;
+}
+
+input:focus,
+button:focus{
+    outline:none;
+}
+
+form{
+    width:380px;
+    margin:2em auto;
+}
+
+h2{
+    font-size:1.5em;
+    font-weight: normal;
+    letter-spacing: .2em; 
+    position: absolute;
+    right:1em;
+    top:.75em;
+}
+
+h2:nth-of-type(1){
+    color:#00ff00;
+    right:1.04em;
+}
+
+h2:nth-of-type(2){
+    color:#ff0000;
+    right:.96em;
+}
+
+h2:nth-of-type(3){
+    color:#0000ff;
+    top:.79em;
+}
+
+h2:nth-of-type(4){
+    color:white;
+}
+
+.loader{
+    display: none;
+    border: 5px solid #333;
+    border-radius: 50%;
+    border-top: 5px solid #fff;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -ms-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin:auto;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@-ms-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.date{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 1;
+}
+
+.title{
+    font-size:1.5em;
+    font-weight: normal;
+    letter-spacing: .1em; 
+    position: absolute;
+    left:1.5em;
+    top:1.5em;
+    z-index: 1;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+}
+
+#enterBday{
+    font-family: Camcorder, monospace;
+    text-transform: uppercase;
+    color:#fff;
+    position: static;
+    margin-top:30vh;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+    color:#fff;
+}
